@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "e7LOQobU9qciKTMmVPV9aW",
+    "name" : "Proc_snowflake_readData",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "TDbf13ErhNzUzeA-gt-1588338-2023-11-02T17:35:57.731Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-02-07T08:36:01.086Z",
+  "objectRefs" : [ {
+    "id" : "gnspZ2M68EUc13Ohq0TxAQ",
+    "name" : "Conn-DAS-Snoflake",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "6gaabclvAhrswVY-gt-1400543-2023-11-02T16:55:27.922Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : " ",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Saurabh_Singh"
+  } ]
+}

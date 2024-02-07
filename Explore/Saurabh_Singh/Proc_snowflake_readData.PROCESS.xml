@@ -1,0 +1,82 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>TDbf13ErhNzUzeA-gt-1588338-2023-11-02T17:35:57.731Z::pd.xml</types1:EntryId>
+      <types1:Name>Proc_snowflake_readData-1</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Sausingh_na1</types1:CreatedBy>
+      <types1:CreationDate>2023-11-02T17:35:58Z</types1:CreationDate>
+      <types1:ModifiedBy>Sausingh_na1</types1:ModifiedBy>
+      <types1:ModificationDate>2023-12-18T12:29:56Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Sausingh_na1</types1:PublishedBy>
+      <types1:PublicationDate>2023-12-18T12:29:59Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.Proc_snowflake_readData-1/Proc_snowflake_readData-1.pd.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="Proc_snowflake_readData"
+                  name="Proc_snowflake_readData-1"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="" name="EmployeeOutput" type="reference">
+                  <options>
+                     <option name="referenceTo">Conn-DAS-Snoflake:dataAccessResponse</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">gnspZ2M68EUc13Ohq0TxAQ</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="TestTemp" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload outputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="lohglutz" targetId="lohgluty"/>
+               </start>
+               <service id="lohgluty">
+                  <title>getEmp</title>
+                  <serviceName>Conn-DAS-Snoflake:GetEmp</serviceName>
+                  <serviceGUID>gnspZ2M68EUc13Ohq0TxAQ</serviceGUID>
+                  <serviceInput/>
+                  <link id="lohgluu6" targetId="lohgluu5"/>
+               </service>
+               <assignment id="lohgluu5">
+                  <title>Employees</title>
+                  <operation source="field" to="output.EmployeeOutput">output.DASOutput[1]/dataAccessResponse</operation>
+                  <link id="lohgluu7" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>e7LOQobU9qciKTMmVPV9aW</types1:GUID>
+      <types1:DisplayName>Proc_snowflake_readData</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-02-07T08:36:00.836Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
